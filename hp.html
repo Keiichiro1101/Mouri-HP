@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛利博物館</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/mouri-icon.png" alt="毛利家のロゴ">
+        <div class="nav-links">
+            <div class="dropdown">
+                <button class="dropbtn">毛利博物館 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#about">概要・収蔵品一覧</a>
+                    <a href="#history">歴史</a>
+                    <a href="#highlights">見どころ</a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">国指定名勝 毛利氏庭園
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#garden-overview">概要</a>
+                    <a href="#garden-map">地図</a>
+                </div>
+            </div>
+            <a href="#mouri-history">毛利の歴史</a>
+            <a href="#news">お知らせ</a>
+            <a href="#guide-access">案内とアクセス</a>
+        </div>
+    </div>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/image1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image5.jpg" style="width:100%">
+        </div>
+
+        <!-- ナビゲーションボタン -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

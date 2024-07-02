@@ -1,0 +1,108 @@
+body, .navbar, .nav-links, .nav-links a, .dropbtn, .dropdown-content, .dropdown-content a {
+    font-family: '游明朝体', 'Yu Mincho', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* ナビゲーションバーの背景を白に設定 */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* ボーダーを追加して区切り線を作成 */
+}
+
+.navbar img {
+    height: 50px; /* ロゴの高さを適切に設定 */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links a, .dropbtn {
+    font-size: 16px;
+    color: #000; /* ナビゲーションバーのテキストを黒に設定 */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* ドロップダウンメニューの背景を淡い灰色に設定 */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #000; /* ドロップダウンメニューのテキストを黒に設定 */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* ドロップダウンメニュー項目のホバー時の背景を淡い灰色に設定 */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-links a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd; /* ホバー時の背景を淡い灰色に設定 */
+    color: #000; /* ホバー時のテキストを黒に設定 */
+}
+
+.slideshow-container {
+    position: relative;
+    margin-top: 20px; /* スライドショーとナビゲーションボタンの間のスペース */
+}
+
+.mySlides {
+    display: none; /* 最初のスライド以外は非表示 */
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景 */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
