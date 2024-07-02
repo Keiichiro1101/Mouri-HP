@@ -1,5 +1,5 @@
 body, .navbar, .nav-links, .nav-links a, .dropbtn, .dropdown-content, .dropdown-content a {
-    font-family: '游明朝体', 'Yu Mincho', serif;
+    font-family: 'Yuji Syuku', serif;
 }
 
 body {
@@ -8,17 +8,23 @@ body {
     background-color: #fff;
     color: #000;
 }
+
 .navbar {
+    position: fixed; /* バナーを常に固定 */
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff; /* ナビゲーションバーの背景を白に設定 */
-    padding: 10px 20px;
+    padding: 10px 0px;
     border-bottom: 1px solid #ddd; /* ボーダーを追加して区切り線を作成 */
+    z-index: 1000; /* 必要に応じて他の要素よりも上に表示 */
 }
 
 .navbar img {
-    height: 50px; /* ロゴの高さを適切に設定 */
+    height: 80px; /* ロゴの高さを適切に設定 */
 }
 
 .nav-links {
@@ -76,7 +82,7 @@ body {
 
 .slideshow-container {
     position: relative;
-    margin-top: 20px; /* スライドショーとナビゲーションボタンの間のスペース */
+    margin-top: 80px; /* バナーの高さ分だけ余白を設ける */
 }
 
 .mySlides {
