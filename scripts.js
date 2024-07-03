@@ -1,6 +1,11 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+// 5秒ごとにスライドを切り替える
+setInterval(function() {
+    plusSlides(1); // 次のスライドへ進む
+}, 5000); // 5000ミリ秒 = 5秒
+
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
