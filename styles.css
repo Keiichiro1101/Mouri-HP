@@ -179,6 +179,9 @@ body {
     font-size: 30px;
     color: black;
 }
+.underline {
+    text-decoration: underline;
+}
 .layer p {
     padding-right: 20px;
     font-size: 17px;
