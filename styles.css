@@ -84,7 +84,20 @@ body {
 
 .slideshow-container {
     position: relative;
-    margin-top: 80px; /* バナーの高さ分だけ余白を設ける */
+    margin-top: 100px;
+    background-color: #000;
+    overflow: hidden; 
+}
+
+/* Fading animation */
+@keyframes fade-in {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/* Apply fade-in animation */
+.fade-in {
+    animation: fade-in 3s ease-out;;
 }
 
 .mySlides {
@@ -93,8 +106,11 @@ body {
 
 .mySlides img {
     width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
-
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -105,6 +121,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景 */
     font-size: 20px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .next {
@@ -269,5 +286,5 @@ body {
 }
 
 #business-hours th {
-    background-color: #f2f2f2;
+    background: linear-gradient(to bottom, rgba(246, 244, 244, 0.802), rgba(255, 217, 0, 0.669));
 }
